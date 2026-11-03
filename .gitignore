@@ -1,0 +1,37 @@
+# Environments / caches
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Data and artifacts: NEVER commit dataset media or model weights
+data/
+checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.onnx
+!src/avdd/assets/*.onnx
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.mp3
+*.flac
+
+# Local config / secrets
+.env
+
+# Generated inspection output (may contain dataset-derived paths)
+inventory_out/
+
+# Local app data and outputs
+app_data/
+env_report.json
+result.json
+pytest_output.txt
+frontend/dist/
